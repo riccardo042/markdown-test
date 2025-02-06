@@ -1,0 +1,80 @@
+:root {
+  --bg: rgb(153, 77, 149);
+}
+
+* {
+  font-family: "Geist";
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+#editor {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+/* Custom scrollbar */
+textarea::-webkit-scrollbar {
+  width: 8px; /* Adjust width to make it thinner */
+  height: 8px; /* Adjust height for horizontal scrollbar */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Darker color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Lighter color for the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4); /* Darker thumb when hovered */
+}
+
+
+#preview {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+  width: 60%;
+  min-height: 300px;
+  height:fit-content;
+  padding: 15px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  background-color: white;
+}
